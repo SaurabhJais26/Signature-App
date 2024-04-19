@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppTheme"
+    tools:context=".ui.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_16sdp"
+        android:layout_alignParentTop="true"
+        android:outlineAmbientShadowColor="@color/white"
+        android:src="@drawable/sencosp">
+
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/ipAddressMainView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_edittext_bg"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:text="Submit"
+            android:textColor="#000"
+            android:textSize="@dimen/_13sdp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ipLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textIp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Enter the Ip Address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:gravity="center"
+                android:hint="Ex: 111.234.162.100:7401"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="@dimen/_12ssp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
