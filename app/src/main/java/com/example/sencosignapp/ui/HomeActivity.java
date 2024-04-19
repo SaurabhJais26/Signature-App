@@ -53,7 +53,8 @@ public class HomeActivity extends BaseActivity implements  CustomerDetailAdapter
         btnGetInvoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                executeInvoiceApi(userId);
+                finish();
+                startActivity(getIntent());
             }
         });
         databaseConnection.deleteBlankSign();
@@ -91,8 +92,8 @@ public class HomeActivity extends BaseActivity implements  CustomerDetailAdapter
                                     cursor.getString(cursor.getColumnIndexOrThrow("customerName")),
                                     cursor.getString(cursor.getColumnIndexOrThrow("customerAcct"))
                             ));
-                            cursor.moveToNext();
                         }
+                        cursor.moveToNext();
                     }
                     if (customerDetailModelArrayList != null){
                         adapter = new CustomerDetailAdapter(customerDetailModelArrayList);
